@@ -1,6 +1,6 @@
-package Calculator;
 
 import javafx.event.Event;
+import javafx.scene.control.Button;
 
 public class CalculatorController {
 	
@@ -13,8 +13,11 @@ public class CalculatorController {
 	}
 	
 	public void addButtonToTextField(Event e) {
-		numbersSum.setText(num1);
+		Button b = new Button();
+		b = (Button) e.getSource();
+		
+		if (b.equals(view.num1)) {
+			view.numbersSum.setText("1");
+		}
 	}
-	
-	
 }

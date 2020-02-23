@@ -1,6 +1,4 @@
 
-
-import Calculator.CalculatorController;
 import javafx.event.Event;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -15,7 +13,19 @@ public class CalculatorView {
 	private final CalculatorController controller;
 	private Stage stage;
 	public TextField numbersSum;
-	private Button num1, num2, num3, num4, num5, num6, num7, num8, num9, num0, plus, cancel, equals;
+	public Button num1;
+	protected Button num2;
+	protected Button num3;
+	protected Button num4;
+	protected Button num5;
+	protected Button num6;
+	protected Button num7;
+	protected Button num8;
+	protected Button num9;
+	protected Button num0;
+	protected Button plus;
+	protected Button cancel;
+	protected Button equals;
 	
 	protected CalculatorView (Stage stage, CalculatorModel model, CalculatorController controller) {
 		this.stage = stage;
